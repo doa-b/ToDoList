@@ -73,7 +73,7 @@ class Task
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\TaskList", inversedBy="tasks")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      * @Groups({"task:read", "task:write"})
      */
     private $TaskList;
