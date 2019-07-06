@@ -45,6 +45,8 @@ class Task
     private $id;
 
     /**
+     * Check when task is completed
+     *
      * @ORM\Column(type="boolean")
      * @Groups({"task:read", "task:write"})
      *
@@ -52,11 +54,15 @@ class Task
     private $done;
 
     /**
+     * Deadline of this task
+     *
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $deadline;
 
     /**
+     * Title of this task
+     *
      * @ORM\Column(type="string", length=255)
      * @Groups({"task:read", "task:write", "tasklist:read"})
      *
@@ -64,6 +70,8 @@ class Task
     private $title;
 
     /**
+     * Description of this task
+     *
      * @ORM\Column(type="text", nullable=true)
      * @Groups({"task:item:get", "task:write"})
      * @Assert\NotBlank()

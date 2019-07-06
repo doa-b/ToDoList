@@ -33,6 +33,8 @@ class TaskList
     private $id;
 
     /**
+     * Title of this task list
+     *
      * @ORM\Column(type="string", length=255)
      *  @Groups({"tasklist:read", "tasklist:write"})
      * @Assert\NotBlank()
@@ -45,6 +47,8 @@ class TaskList
     private $title;
 
     /**
+     * Description of this task list
+     *
      * @ORM\Column(type="text", nullable=true)
      * @Groups({"tasklist:item:get", "tasklist:write"})
      */
