@@ -52,6 +52,7 @@ class TaskList
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Task", mappedBy="TaskList", orphanRemoval=true)
+     * @ORM\OrderBy({"deadline" = "ASC"})
      * @Groups({"tasklist:read", "tasklist:write"})
      */
     private $tasks;

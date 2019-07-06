@@ -2,11 +2,14 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Carbon\Carbon;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
  * @ApiResource(
@@ -18,13 +21,19 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *          "put"
  *     },
  *     normalizationContext={"groups"={"task:read"}},
- *     denormalizationContext={"groups"={"task:write"}} *
+ *     denormalizationContext={"groups"={"task:write"}},
+ *     attributes={
+ *          "pagination_items_per_page" = 10,
+ *          "formats"={"jsonld", "json", "html"}
+ *     }
  * )
  * @ORM\Entity(repositoryClass="App\Repository\TaskRepository")
- * attributes={
- *          "pagination_items_per_page" = 10,
- *          "formats"={"jsonld", "json", "html"}}
- *     }
+ * @ApiFilter(BooleanFilter::class, properties={"done"})
+ * @ApiFilter(SearchFilter::class, properties={
+ *     "title": "ipartial",
+ *     "description": "ipartial" *
+ * })
+ *
  */
 class Task
 {
@@ -49,7 +58,7 @@ class Task
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"task:read", "task:write"})
+     * @Groups({"task:read", "task:write", "tasklist:read"})
      *
      */
     private $title;
@@ -114,9 +123,11 @@ class Task
      *
      * @Groups({"task:read", "task:write"})
      */
-    public function getTimeLeft(): string
+    public function getDeadlineIs(): string
     {
-        return Carbon::instance($this->getDeadline())->diffForHumans();;
+        return Carbon::instance($this->getDeadline())->diffForHumans();
+
+        //return date_format($this->getDeadline(), 'g:ia \o\n l jS F Y');
     }
 
     public function setDeadline(?\DateTimeInterface $deadline): self
@@ -158,11 +169,11 @@ class Task
     /**
     * Returns human readable time past since creation
     *
-    * @Groups({"task:read", "task:write"})
+    * @Groups("task:item:get")
     */
     public function getCreatedAtAgo(): string
     {
-        return Carbon::instance($this->getCreatedAt())->diffForHumans();;
+        return Carbon::instance($this->getCreatedAt())->diffForHumans();
     }
 
     public function getTaskList(): ?TaskList
