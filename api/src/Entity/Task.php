@@ -48,7 +48,7 @@ class Task
      * Check when task is completed
      *
      * @ORM\Column(type="boolean")
-     * @Groups({"task:read", "task:write"})
+     * @Groups({"task:read", "task:write", "tasklist:item:get", "tasklist:write"})
      *
      */
     private $done;
@@ -57,6 +57,7 @@ class Task
      * Deadline of this task
      *
      * @ORM\Column(type="datetime", nullable=true)
+     * @Groups({"task:write", "tasklist:write"})
      */
     private $deadline;
 
@@ -64,7 +65,7 @@ class Task
      * Title of this task
      *
      * @ORM\Column(type="string", length=255)
-     * @Groups({"task:read", "task:write", "tasklist:read"})
+     * @Groups({"task:read", "task:write", "tasklist:read", "tasklist:write"})
      *
      */
     private $title;
@@ -73,7 +74,7 @@ class Task
      * Description of this task
      *
      * @ORM\Column(type="text", nullable=true)
-     * @Groups({"task:item:get", "task:write"})
+     * @Groups({"task:item:get", "task:write", "tasklist:item:get", "tasklist:write"})
      * @Assert\NotBlank()
      * @Assert\Length(
      *     min=2,
@@ -129,7 +130,7 @@ class Task
     /**
      * Returns human readable time left to complete
      *
-     * @Groups({"task:read", "task:write"})
+     * @Groups({"task:read"})
      */
     public function getDeadlineIs(): string
     {
