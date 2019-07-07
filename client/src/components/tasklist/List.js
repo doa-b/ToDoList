@@ -37,7 +37,7 @@ class List extends Component {
   render() {
     return (
       <div>
-        <h1>TaskList List</h1>
+        <h1>My TaskLists</h1>
 
         {this.props.loading && (
           <div className="alert alert-info">Loading...</div>
@@ -60,7 +60,6 @@ class List extends Component {
         <table className="table table-responsive table-striped table-hover">
           <thead>
             <tr>
-              <th>id</th>
               <th>title</th>
               <th>tasks</th>
               <th colSpan={2} />
@@ -72,10 +71,9 @@ class List extends Component {
                 <tr key={item['@id']}>
                   <th scope="row">
                     <Link to={`show/${encodeURIComponent(item['@id'])}`}>
-                      {item['@id']}
+                      {item['title']}
                     </Link>
                   </th>
-                  <td>{item['title']}</td>
                   <td>{this.renderLinks('tasks', item['tasks'])}</td>
                   <td>
                     <Link to={`show/${encodeURIComponent(item['@id'])}`}>

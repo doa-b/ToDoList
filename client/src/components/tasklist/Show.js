@@ -39,7 +39,7 @@ class Show extends Component {
 
     return (
       <div>
-        <h1>Show {item && item['@id']}</h1>
+        <h1>{item && item['title']}</h1>
 
         {this.props.loading && (
           <div className="alert alert-info" role="status">
@@ -62,16 +62,9 @@ class Show extends Component {
         {item && (
           <table className="table table-responsive table-striped table-hover">
             <thead>
-              <tr>
-                <th>Field</th>
-                <th>Value</th>
-              </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">title</th>
-                <td>{item['title']}</td>
-              </tr>
+
               <tr>
                 <th scope="row">tasks</th>
                 <td>{this.renderLinks('tasks', item['tasks'])}</td>
@@ -102,7 +95,7 @@ class Show extends Component {
     }
 
     return (
-      <Link to={`../${type}/show/${encodeURIComponent(items)}`}>{items}</Link>
+      <Link to={`/${type}/show/${encodeURIComponent(items)}`}>{items}</Link>
     );
   };
 }
