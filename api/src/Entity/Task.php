@@ -11,6 +11,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
+
 /**
  * @ApiResource(
  *    collectionOperations={"get", "post"},
@@ -136,7 +137,7 @@ class Task
     {
         return Carbon::instance($this->getDeadline())->diffForHumans();
 
-        //return date_format($this->getDeadline(), 'g:ia \o\n l jS F Y');
+//        return date_format($this->getDeadline(), 'g:ia \o\n l jS F Y');
     }
 
     public function setDeadline(?\DateTimeInterface $deadline): self

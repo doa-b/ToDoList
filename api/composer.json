@@ -8,6 +8,8 @@
         "api-platform/api-pack": "^1.1",
         "doctrine/doctrine-fixtures-bundle": "^3.2",
         "guzzlehttp/guzzle": "^6.3",
+        "lexik/jwt-authentication-bundle": "^2.6",
+        "nesbot/carbon": "^2.20",
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.1",
