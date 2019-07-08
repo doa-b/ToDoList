@@ -4,13 +4,13 @@ import './welcome.css';
 const Welcome = () => (
     <div className="welcome">
         <header className="welcome__top">
-          <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://api-platform.com"
-          >
-            <Logo />
-          </a>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://api-platform.com"
+            >
+                <Logo />
+            </a>
             <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -26,22 +26,12 @@ const Welcome = () => (
             </div>
             <div className="main__content">
                 <h1>
-                    Welcome to <strong>API Platform</strong>!
+                    Welcome to <strong>Your To Do List</strong>!
                 </h1>
                 <div className="main__before-starting">
                     <p>
-                        This container will host your <b>Progressive Web App</b>{' '}
-                        ({'http:' === document.location.protocol ? <a href={`https://${document.domain}`}>HTTPS</a> : <a href={`http://${document.domain}`}>HTTP</a>}).
-                        Learn how to create your first API and generate a PWA:
+                        Click here to open <a href="/task_lists/"> your lists </a>
                     </p>
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://api-platform.com/docs/"
-                        className="main__button"
-                    >
-                        Get started<Arrow />
-                    </a>
                 </div>
                 <div className="main__other">
                     <h2>Available services:</h2>

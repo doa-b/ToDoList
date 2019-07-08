@@ -53,7 +53,7 @@ class List extends Component {
 
         <p>
           <Link to="create" className="btn btn-primary">
-            Create
+            Create new tasklist
           </Link>
         </p>
 
