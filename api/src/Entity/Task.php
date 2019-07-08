@@ -57,6 +57,7 @@ class Task
      * Deadline of this task
      *
      * @ORM\Column(type="datetime", nullable=true)
+     * @Groups({"task:write"})
      */
     private $deadline;
 

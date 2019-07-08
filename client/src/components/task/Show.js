@@ -39,7 +39,7 @@ class Show extends Component {
 
     return (
       <div>
-        <h1>Show {item && item['@id']}</h1>
+        <h1>{item && item['title']}</h1>
 
         {this.props.loading && (
           <div className="alert alert-info" role="status">
@@ -70,18 +70,22 @@ class Show extends Component {
             <tbody>
               <tr>
                 <th scope="row">done</th>
-                <td>{item['done']}</td>
+                <td>{item['done'].toString()}</td>
               </tr>
               <tr>
                 <th scope="row">title</th>
                 <td>{item['title']}</td>
               </tr>
               <tr>
+                <th scope="row">description</th>
+                <td>{item['description']}</td>
+              </tr>
+              <tr>
                 <th scope="row">TaskList</th>
                 <td>{this.renderLinks('task_lists', item['TaskList'])}</td>
               </tr>
               <tr>
-                <th scope="row">deadlineIs</th>
+                <th scope="row">deadline</th>
                 <td>{item['deadlineIs']}</td>
               </tr>
             </tbody>

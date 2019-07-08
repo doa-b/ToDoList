@@ -60,11 +60,10 @@ class List extends Component {
         <table className="table table-responsive table-striped table-hover">
           <thead>
             <tr>
-              <th>id</th>
+              <th>task</th>
               <th>done</th>
-              <th>title</th>
               <th>TaskList</th>
-              <th>deadlineIs</th>
+              <th>deadline</th>
               <th colSpan={2} />
             </tr>
           </thead>
@@ -74,11 +73,10 @@ class List extends Component {
                 <tr key={item['@id']}>
                   <th scope="row">
                     <Link to={`show/${encodeURIComponent(item['@id'])}`}>
-                      {item['@id']}
+                      {item['title']}
                     </Link>
                   </th>
-                  <td>{item['done']}</td>
-                  <td>{item['title']}</td>
+                  <td>{item['done'].toString()}</td>
                   <td>{this.renderLinks('task_lists', item['TaskList'])}</td>
                   <td>{item['deadlineIs']}</td>
                   <td>

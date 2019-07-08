@@ -40,6 +40,7 @@ class Show extends Component {
     return (
       <div>
         <h1>{item && item['title']}</h1>
+        <p>{item && item['description']}</p>
 
         {this.props.loading && (
           <div className="alert alert-info" role="status">
@@ -80,6 +81,11 @@ class Show extends Component {
             <button className="btn btn-warning">Edit</button>
           </Link>
         )}
+          {item && (
+              <Link to='/tasks/create'>
+                <button className="btn btn-success">Create new Task</button>
+              </Link>
+          )}
         <button onClick={this.del} className="btn btn-danger">
           Delete
         </button>
