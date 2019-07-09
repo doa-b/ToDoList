@@ -30,7 +30,7 @@ const Welcome = () => (
                 </h1>
                 <div className="main__before-starting">
                     <p>
-                        Click here to open <a href="/task_lists/"> your lists </a>
+                        Click here to open <a href='https://localhost/task_lists/'> your lists </a>
                     </p>
                 </div>
                 <div className="main__other">
