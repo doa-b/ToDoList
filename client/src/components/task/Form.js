@@ -47,12 +47,6 @@ class Form extends Component {
       <form onSubmit={this.props.handleSubmit}>
         <Field
           component={this.renderField}
-          name="done"
-          type="checkbox"
-          placeholder="Check when task is completed"
-        />
-        <Field
-          component={this.renderField}
           name="title"
           type="text"
           placeholder="Title of this task"

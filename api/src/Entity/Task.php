@@ -107,7 +107,6 @@ class Task
         $this->done = false;
     }
 
-
     public function getId(): ?int
     {
         return $this->id;

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9be42dc8-e57f-4727-bda1-ef4073f44561" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/src/DataFixtures/AppFixtures.php" afterPath="$PROJECT_DIR$/../api/src/DataFixtures/AppFixtures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/src/Entity/Task.php" afterPath="$PROJECT_DIR$/../api/src/Entity/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/task/Form.js" afterPath="$PROJECT_DIR$/src/components/task/Form.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,8 +103,8 @@
       <file leaf-file-name="Form.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/task/Form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -423,15 +423,15 @@
       <workItem from="1562520824268" duration="398000" />
       <workItem from="1562521535860" duration="1552000" />
       <workItem from="1562523938094" duration="7966000" />
-      <workItem from="1562670298054" duration="3125000" />
+      <workItem from="1562670298054" duration="3722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23339000" />
+    <option name="totallyTimeSpent" value="23936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -784,8 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/task/Form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        <state relative-caret-position="187">
+          <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding />
         </state>
       </provider>
