@@ -57,7 +57,7 @@ class Task
     /**
      * Deadline of this task
      *
-     * @ORM\Column(type="datetime", nullable=true)
+     * @ORM\Column(type="datetime", nullable=false)
      * @Groups({"task:write"})
      */
     private $deadline;
@@ -103,6 +103,8 @@ class Task
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
+        $this->deadline = new \DateTimeImmutable();
+        $this->done = false;
     }
 
 

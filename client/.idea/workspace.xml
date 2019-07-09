@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9be42dc8-e57f-4727-bda1-ef4073f44561" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Welcome.js" afterPath="$PROJECT_DIR$/src/Welcome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/src/DataFixtures/AppFixtures.php" afterPath="$PROJECT_DIR$/../api/src/DataFixtures/AppFixtures.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/src/Entity/Task.php" afterPath="$PROJECT_DIR$/../api/src/Entity/Task.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,23 +45,23 @@
         <entry file="file://$PROJECT_DIR$/src/Welcome.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+              <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1562671093586" expanded="true" signature="1166:1571" ph="..." />
-                <marker date="1562671093586" expanded="true" signature="1265:1571" ph="..." />
-                <marker date="1562671093586" expanded="true" signature="1321:1388" ph="..." />
-                <marker date="1562671093586" expanded="true" signature="1445:1571" ph="..." />
-                <marker date="1562671093586" expanded="true" signature="1529:1571" ph="..." />
+                <marker date="1562672790551" expanded="true" signature="1166:1571" ph="..." />
+                <marker date="1562672790551" expanded="true" signature="1265:1571" ph="..." />
+                <marker date="1562672790551" expanded="true" signature="1321:1388" ph="..." />
+                <marker date="1562672790551" expanded="true" signature="1445:1571" ph="..." />
+                <marker date="1562672790551" expanded="true" signature="1529:1571" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="425">
               <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
               <folding />
             </state>
@@ -101,6 +100,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Form.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/task/Form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Update.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/task/Update.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,16 +118,6 @@
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/task/Form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="67" column="38" lean-forward="false" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,9 +160,9 @@
         <option value="$PROJECT_DIR$/src/components/task/List.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/tasklist/List.js" />
-        <option value="$PROJECT_DIR$/src/components/task/Form.js" />
         <option value="$PROJECT_DIR$/src/Welcome.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/task/Form.js" />
       </list>
     </option>
   </component>
@@ -424,15 +423,15 @@
       <workItem from="1562520824268" duration="398000" />
       <workItem from="1562521535860" duration="1552000" />
       <workItem from="1562523938094" duration="7966000" />
-      <workItem from="1562670298054" duration="1018000" />
+      <workItem from="1562670298054" duration="3125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21232000" />
+    <option name="totallyTimeSpent" value="23339000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -492,11 +491,11 @@
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1562671093586" expanded="true" signature="1166:1571" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1265:1571" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1321:1388" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1445:1571" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1529:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1166:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1265:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1321:1388" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1445:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1529:1571" ph="..." />
           </folding>
         </state>
       </provider>
@@ -645,7 +644,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,6 +741,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="1443" column="0" lean-forward="false" selection-start-line="1443" selection-start-column="0" selection-end-line="1443" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1562672790551" expanded="true" signature="1166:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1265:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1321:1388" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1445:1571" ph="..." />
+            <marker date="1562672790551" expanded="true" signature="1529:1571" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/task/Update.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -754,39 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/task/Form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="67" column="38" lean-forward="false" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="1443" column="0" lean-forward="false" selection-start-line="1443" selection-start-column="0" selection-end-line="1443" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Welcome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1562671093586" expanded="true" signature="1166:1571" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1265:1571" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1321:1388" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1445:1571" ph="..." />
-            <marker date="1562671093586" expanded="true" signature="1529:1571" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="340">
+          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
           <folding />
         </state>
       </provider>

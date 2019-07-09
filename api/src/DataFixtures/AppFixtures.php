@@ -34,36 +34,36 @@ class AppFixtures extends Fixture
         $task->setTaskList($taskList1);
         $manager->persist($task);
 
-            for($i = 1; $i < 5; $i++){
-                $date = new \DateTime();
-                $date->modify($i." days");
-                $task = new Task();
-                $task->setDeadline($date);
-                $task->setTitle("Task nr ".$i);
-                $task->setDescription("I love my job");
-                $task->setDone(false);
-                $task->setTaskList($taskList1);
-                $manager->persist($task);
-            }
-
-        for($i = 1; $i < 5; $i++){
+        for ($i = 1; $i < 5; $i++) {
             $date = new \DateTime();
-            $date->modify($i." days");
+            $date->modify($i . " days");
             $task = new Task();
             $task->setDeadline($date);
-            $task->setTitle("Task nr ".$i);
+            $task->setTitle("Task nr " . $i);
+            $task->setDescription("I love my job");
+            $task->setDone(false);
+            $task->setTaskList($taskList1);
+            $manager->persist($task);
+        }
+
+        for ($i = 1; $i < 5; $i++) {
+            $date = new \DateTime();
+            $date->modify($i . " days");
+            $task = new Task();
+            $task->setDeadline($date);
+            $task->setTitle("Task nr " . $i);
             $task->setDescription("I love my wife");
             $task->setDone(false);
             $task->setTaskList($taskList2);
             $manager->persist($task);
         }
 
-        for($i = 1; $i < 5; $i++){
+        for ($i = 1; $i < 5; $i++) {
             $date = new \DateTime();
-            $date->modify(-$i." days");
+            $date->modify(-$i . " days");
             $task = new Task();
             $task->setDeadline($date);
-            $task->setTitle("Task nr ".$i);
+            $task->setTitle("Task nr " . $i);
             $task->setDescription("Tasks from the past");
             $task->setDone(true);
             $task->setTaskList($taskList3);
